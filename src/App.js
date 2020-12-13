@@ -1,18 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import PageUserDashboard from "./Containers/PageUserDashboard";
 import PageAdminDashboard from "./Containers/PageAdminDashboard";
 import PageLogin from "./Containers/PageLogin";
-import PageProductsDetail from "./Containers/PageProductsDetail";
+import PageUserDashboard from "./Containers/PageUserDashboard";
 import PageUserDetail from "./Containers/PageUserDetail";
-import {
-  adminDashboardLink,
-  loginLink,
-  productDetailLink,
-  userDashboardLink,
-  userDetailLink,
-} from "./Utils/Network";
+import { adminDashboardLink, loginLink, userDashboardLink, userDetailLink } from "./Utils/Network";
 
 export class App extends Component {
   constructor(props) {
@@ -54,12 +47,6 @@ export class App extends Component {
                   path={userDashboardLink}
                   name="User Dashboard"
                   render={(props) => <PageUserDashboard {...props} />}
-                />
-
-                <Route
-                  path={productDetailLink + "/:product_id"}
-                  name="Product"
-                  render={(props) => <PageProductsDetail {...props} />}
                 />
 
                 <Redirect from="*" to={loginLink} />
