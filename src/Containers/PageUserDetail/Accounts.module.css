@@ -1,0 +1,244 @@
+.accountContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.accountContainer h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.accountListWrapper {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  height: 100px;
+  background-color: #435c70;
+}
+
+.accountListWrapper label {
+  width: 100%;
+}
+
+.accountListWrapper label h2 {
+  font-weight: 200;
+  font-size: 17px;
+  color: #fff;
+}
+
+.fromContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: end;
+  margin: 0 auto;
+}
+
+.fromWrapper {
+  margin-top: 20px;
+  padding: 30px;
+  width: calc(65% - 60px);
+  height: auto;
+  background-color: #435c70;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uploadWrapper {
+  width: calc(30% - 40px);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #435c70;
+  position: relative;
+}
+
+.fromWrapper > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.colum {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.colum label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.colum label input,
+select {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: none;
+  outline: navajowhite;
+  color: #fff;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background-color: #54657d;
+}
+
+.uploadImg {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadImg .uploadBtnWrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  background-color: white;
+  padding: 8px 8px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.previewImg {
+  width: 200px;
+  height: auto;
+  background-color: darkgray;
+  overflow: hidden;
+}
+
+.uploadBtnWrapper input[type="file"] {
+  font-size: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.uploadTextBtnWrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.uploadTextBtnWrapper input[type="file"] {
+  background-color: azure;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.button {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: solid 2px #f5a623;
+  font-size: 15px;
+  font-weight: 600;
+  color: cornsilk;
+  background-color: #f5a623;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #f5a623;
+}
+
+.uploadWrapper h2,
+.fromWrapper h2 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .accountContainer {
+    width: 90%;
+  }
+
+  .fromWrapper > div {
+    flex-direction: column;
+  }
+  .colum {
+    width: calc(100% - 0px);
+  }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .accountContainer {
+    width: 90%;
+  }
+
+  .fromContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .fromContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .uploadWrapper {
+    width: calc(100% - 40px);
+  }
+
+  .fromWrapper {
+    width: calc(100% - 60px);
+  }
+
+  .fromWrapper > div {
+    flex-direction: column;
+  }
+  .colum {
+    width: calc(100% - 0px);
+  }
+}

@@ -1,0 +1,148 @@
+.productContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.productListContainer {
+  width: 70%;
+  padding: 30px;
+  margin-right: 20px;
+  background-color: #435c70;
+}
+
+.AddProduct {
+  width: 100%;
+  height: 46px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5a623;
+  border: 2px solid #f5a623;
+  color: #ffffff;
+}
+
+.AddProduct:hover {
+  background-color: transparent;
+  color: #f5a623;
+}
+.AddProduct a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.AddProduct a:hover {
+  color: #f5a623;
+}
+.productCategoriesWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.productCategoriesWrapper::-webkit-scrollbar-track {
+  background: #44586b;
+}
+.productCategoriesWrapper::-webkit-scrollbar-thumb {
+  background: #697e92;
+}
+.productCategoriesWrapper::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.productListWrapper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow-y: scroll;
+}
+
+/* width */
+.productListWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.productListWrapper::-webkit-scrollbar-track {
+  background: #44586b;
+}
+
+/* Handle */
+.productListWrapper::-webkit-scrollbar-thumb {
+  background: #697e92;
+}
+
+/* Handle on hover */
+.productListWrapper::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.productCategoriesContainer {
+  width: 30%;
+  padding: 30px;
+  /* margin-right: 20px; */
+  background-color: #435c70;
+}
+.productCategoriesWrapper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.categoriesName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.categoriesName h2 {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: solid 2px #f5a623;
+  font-size: 15px;
+  font-weight: 600;
+  color: cornsilk;
+  background-color: #f5a623;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #f5a623;
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1) {
+  .productContainer {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .productContainer {
+    width: 90%;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .productListContainer {
+    width: calc(100% - 60px);
+    height: 600px;
+  }
+
+  .productCategoriesContainer {
+    width: calc(100% - 60px);
+    margin-top: 30px;
+  }
+  .productListWrapper {
+    width: 100%;
+    height: 450px;
+  }
+}

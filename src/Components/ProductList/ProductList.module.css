@@ -1,0 +1,143 @@
+.col {
+  width: 10%;
+}
+.tableScroll {
+  width: 100%;
+  color: #fff;
+  font-size: 85%;
+  margin-bottom: 0;
+}
+
+.tableScroll thead {
+  background-color: #50697f;
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+
+.tableScroll tbody {
+  display: block;
+  background-color: #44586b;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+}
+
+.tableScroll tr {
+  width: 100%;
+  display: flex;
+  border-bottom: solid 1px #4e657a;
+  box-sizing: border-box;
+}
+
+.tableScroll td,
+.tableScroll th {
+  flex-grow: 2;
+  display: block;
+  padding: 1rem;
+  text-align: left;
+}
+
+.selProduct {
+  flex-basis: 10%;
+}
+.stock {
+  flex-basis: 15%;
+}
+.name {
+  flex-basis: 20%;
+}
+.expireDate {
+  flex-basis: 30%;
+}
+.deleteBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #394e64;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+}
+.deleteBtn i {
+  font-size: 15px;
+  justify-content: center;
+}
+.deleteBtn:hover {
+  color: rgba(180, 180, 180, 0.76);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color: #394e64;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #334d7c;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #5781a3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: flex;
+}
+.container .checkmark:after {
+  left: 10px;
+  top: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media only screen and (min-width: 400px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tableScroll {
+    overflow: scroll;
+    width: 700px;
+  }
+}

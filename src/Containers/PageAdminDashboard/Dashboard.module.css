@@ -1,0 +1,72 @@
+.Container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  flex-direction: column;
+}
+.headingRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+.headingRow > div > p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.headingRow h2 {
+  font-weight: 100;
+  margin: 0px;
+}
+
+.logoutBtn {
+  font-size: 15px;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  color: #f5a623;
+}
+
+.rowThird > div h2 {
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.rowThird {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  background-color: #394f62;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heading {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .rowThird {
+    height: calc(50% - 40px);
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .rowThird {
+    height: calc(50% - 40px);
+    overflow: scroll;
+  }
+}
